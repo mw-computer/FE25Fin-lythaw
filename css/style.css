@@ -1,5 +1,89 @@
-@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-* {
-	
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:15px;
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: banada;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root {
+    --site-width: 1200px;
+}
+
+.con-min-width {
+    min-width: var(--site-width);
+}
+
+.top-bar>.con {
+    width: var(--site-width);
+}
+
+.top-bar__menu-box-1>ul ul {
+    display: none;
+}
+
+
+.top-bar__menu-box-1>ul>li {
+    display: inline-block;
+}
+
+.top-bar__menu-box-1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.top-bar__menu-box-1 ul {
+    back-ground-color: black;
+    color: white
+}
+
+.top-bar__menu-box-1 ul>li>a {
+    display: block;
+    font-size: 3em;
+    padding: 10px 20px;
+
+}
+
+.top-bar__menu-box-1 ul>li:hover>a {
+    background-color: #555;
+}
+
+.top-bar__menu-box-1>ul>li {
+    position: relative;
+}
+
+.top-bar__menu-box-1>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.top-bar__menu-box-1>ul>li:hover>ul {
+    display: block;
+}
+
+.top-bar__menu-box-1>ul {
+    border-radius: 20px;
 }
